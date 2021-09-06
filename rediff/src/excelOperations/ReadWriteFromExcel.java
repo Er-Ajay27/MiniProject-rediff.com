@@ -117,57 +117,6 @@ public class ReadWriteFromExcel {
 		fw.close();
 	}
 	
-	
-	/*
-	 * public static void checkCreateModule() throws Exception {
-	 * ReadWriteFromExcel.read(OperationOnRediff.pathCheckPortfolio);
-	 * creatPortfolio=OperationOnRediff.createPortfolio(); moduleName=
-	 * "CreatePortfolio"; for (int i = 0; i < readList.size(); i++) { if
-	 * (creatPortfolio) { result = "Pass"; comment =
-	 * "Portfolio Created Successfully"; System.out.println(readList.get(i) +
-	 * " Module " + "Portfolio Created"); } else {
-	 * 
-	 * result = "Pass"; comment = "Portfolio Already Exist";
-	 * System.out.println(readList.get(i) + " Module " + "Portfolio Already"); }
-	 * ReadWriteFromExcel.writeTestCases(
-	 * "D:\\selenium1\\mini_Project_rediff\\testCasees.txt",moduleName,result,
-	 * comment); } }
-	 * 
-	 * public static void checkCheckPortfolioModule() throws Exception {
-	 * ReadWriteFromExcel.read(OperationOnRediff.pathCheckPortfolio); for(int
-	 * i=0;i<readList.size();i++) {
-	 * 
-	 * checkPortfolio = OperationOnRediff.checkPortfolio(readList.get(i));
-	 * moduleName = "checkPortfolio"; if(checkPortfolio) {
-	 * 
-	 * result = "Pass"; comment = "CheckPortfolio module run successfully";
-	 * System.out.println("CheckPortfolio Module -> Pass ->  Portfolio Exist "); }
-	 * else { result = "Fail"; comment = "CheckPortfolio module run successfully";
-	 * System.out.println("CheckPortfolio Module -> Fail ->  Portfolio not exist ");
-	 * } ReadWriteFromExcel.writeTestCases(
-	 * "D:\\selenium1\\mini_Project_rediff\\testCasees.txt",moduleName,result,
-	 * comment); }
-	 * 
-	 * } public static void checkSignModule() { try { signInCheck=
-	 * OperationOnRediff.SignIn();
-	 * 
-	 * moduleName= "SignIn Module"; if(signInCheck) {
-	 * ReadWriteFromExcel.read(OperationOnRediff.pathSignIn); result = "Pass";
-	 * comment = "SignIn Successful";
-	 * System.out.println("SignIn Module -> Pass -> Sign In Successful"); } else {
-	 * result = "Fail"; comment = "SignIn failed";
-	 * System.out.println("SignIn Module -> Fail -> Sign In Failed"); }
-	 * 
-	 * 
-	 * ReadWriteFromExcel.writeTestCases(
-	 * "D:\\selenium1\\mini_Project_rediff\\testCasees.txt",moduleName,result,
-	 * comment);
-	 * 
-	 * } catch (Exception e) { // TODO Auto-generated catch block
-	 * e.printStackTrace(); }
-	 * 
-	 * }
-	 */
 	//Check Each Module
 public static void writeTestCases(String filePath,String moduleName,String result,String comment) throws IOException {
 		
